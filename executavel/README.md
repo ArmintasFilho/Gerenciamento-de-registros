@@ -1,7 +1,11 @@
 # Executável Gerenciador de Registros.
 Para fazer o uso do executável será preciso:
- - baixar o MongoDB Compass. 
+ - baixar o [MongoDB](https://www.mongodb.com/try/download/community).
  - baixar o executável Gerenciador-de-Registros.exe.
+
+O executável irá dar erro:
+ - se o MongoDB não estiver instalado.
+ - se não ter criado a conexão padrão da url mongodb://localhost:27017 do aplicativo MongoDB Compass. 
 
 ## Como usar o executável 
 ### TELA INICIAL
