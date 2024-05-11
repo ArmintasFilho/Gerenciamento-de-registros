@@ -26,9 +26,18 @@ Button Exclusão (Delete):
   - Confirmação antes de excluir o registro do MongoDB.
 
 # Instruções para uso
-`codigo`
-.gitattributes
-.gitgnore
-Gerenciamento-de-registros.sln
+ - [`codigo`](codigo)
+ - [.gitattributes](.gitattributes)
+ - [.gitgnore](.gitgnore)
+ - [Gerenciamento-de-registros.sln](Gerenciamento-de-registros.sln)
+ - README.md 
 
+A pasta [`codigo`](codigo) é onde está armazenado todo o código fonte do projeto.
 
+O arquivo [.gitattributes](.gitattributes) é usado para associar atributos específicos a arquivos e diretórios em um repositório Git. Esses atributos podem controlar o comportamento do Git durante operações como comparação de arquivos, mesclagem de branches e outras operações relacionadas ao controle de versão.
+
+O arquivo [.gitgnore](.gitgnore) é usado para especificar arquivos e diretórios que o Git deve ignorar ao rastrear as alterações em um repositório. Por exemplo, você pode querer ignorar arquivos de log, arquivos temporários, diretórios de compilação ou quaisquer outros arquivos que não sejam necessários para o controle de versão do seu projeto. Isso é útil para evitar poluir o histórico do Git com arquivos desnecessários e para garantir que apenas os arquivos relevantes sejam versionados.
+
+O arquivo [Gerenciamento-de-registros.sln](Gerenciamento-de-registros.sln) é responsável pelo gerenciamento e a organização de projetos relacionados em uma solução dentro do Visual Studio. Ele fornece uma maneira conveniente de trabalhar com vários projetos em um único ambiente de desenvolvimento e facilita o processo de build, depuração e manutenção de software.
+
+O README.md é onde está as informações do projeto.
