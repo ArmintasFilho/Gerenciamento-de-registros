@@ -5,11 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace codigo
 {
@@ -22,10 +24,7 @@ namespace codigo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var collectionPessoas = Conexao.AbrirColecaoPessoas();
-            var listaPessoas = collectionPessoas.Find(p => true).ToList();
-
-            dataGridView1.DataSource = listaPessoas;
+            AtualizarDataGridView1();
 
             dataGridView1.Columns["Id"].Width = 90;
             dataGridView1.Columns["Nome"].Width = 140;
@@ -89,9 +88,25 @@ namespace codigo
         }
         private void AtualizarDataGridView1()
         {
-            var collectionPessoas = Conexao.AbrirColecaoPessoas();
-            var listaPessoas = collectionPessoas.Find(p => true).ToList();
-            dataGridView1.DataSource = listaPessoas;
+            try
+            {
+                var collectionPessoas = Conexao.AbrirColecaoPessoas();
+                var listaPessoas = collectionPessoas.Find(p => true).ToList();
+                dataGridView1.DataSource = listaPessoas;
+            }
+            catch
+            {
+                var result = MessageBox.Show("Parece que você não possui o MongoDB instalado, " +
+                    "clique em sim para ir direto no link para instalação.",
+                    "Instale o MongoBD", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+
+                if (result == DialogResult.Yes)
+                {
+                    Process.Start("https://www.mongodb.com/try/download/community");
+                    
+                }
+                this.Close();
+            }
         }
     }
 }
