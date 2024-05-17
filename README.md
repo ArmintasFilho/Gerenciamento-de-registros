@@ -27,12 +27,17 @@ Button Exclusão (Delete):
 
 # Instruções para uso
  - [`codigo`](codigo)
+ - [`executavel`](executavel)
+   - [Gerenciador-de-Registros.exe](executavel/Gerenciador-de-Registros.exe)
+   - [README.md](executavel/README.md)
  - [.gitattributes](.gitattributes)
  - [.gitgnore](.gitgnore)
  - [Gerenciamento-de-registros.sln](Gerenciamento-de-registros.sln)
- - README.md 
+ - [README.md](README.md) 
 
 A pasta [`codigo`](codigo) é onde está armazenado todo o código fonte do projeto.
+
+A pasta [`executavel`](executavel) é onde está armazenado o executável [Gerenciador-de-Registros.exe](executavel/Gerenciador-de-Registros.exe) e o [README.md](executavel/README.md) que explica como usar e o que é preciso para executável funcionar. 
 
 O arquivo [.gitattributes](.gitattributes) é usado para associar atributos específicos a arquivos e diretórios em um repositório Git. Esses atributos podem controlar o comportamento do Git durante operações como comparação de arquivos, mesclagem de branches e outras operações relacionadas ao controle de versão.
 
@@ -40,4 +45,4 @@ O arquivo [.gitgnore](.gitgnore) é usado para especificar arquivos e diretório
 
 O arquivo [Gerenciamento-de-registros.sln](Gerenciamento-de-registros.sln) é responsável pelo gerenciamento e a organização de projetos relacionados em uma solução dentro do Visual Studio. Ele fornece uma maneira conveniente de trabalhar com vários projetos em um único ambiente de desenvolvimento e facilita o processo de build, depuração e manutenção de software.
 
-O README.md é onde está as informações do projeto.
+O [README.md](README.md) é onde está as informações do projeto.
